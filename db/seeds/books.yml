@@ -1,24 +1,14 @@
-- id: 1
-  title: Капитанская дочка
-  author_id: 1
+- title: Капитанская дочка
   price: 500
 
-- id: 2
-  title: Будущее
-  author_id: 2
+- title: Будущее
   price: 700
 
-- id: 3
-  title: Метро 2033
-  author_id: 2
+- title: Метро 2033
   price: 600
 
-- id: 4
-  title: Ночной дозор
-  author_id: 3
+- title: Ночной дозор
   price: 1000
 
-- id: 5
-  title: Дневной дозор
-  author_id: 3
+- title: Дневной дозор
   price: 1000

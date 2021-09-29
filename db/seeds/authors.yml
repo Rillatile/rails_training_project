@@ -1,17 +1,14 @@
-- id: 1
-  name: Александр
+- name: Александр
   surname: Пушкин
   birthday: 1799-6-6
   sex: male
 
-- id: 2
-  name: Дмитрий
+- name: Дмитрий
   surname: Глуховский
   birthday: 1979-6-12
   sex: male
 
-- id: 3
-  name: Сергей
+- name: Сергей
   surname: Лукьяненко
   birthday: 1968-4-11
   sex: male

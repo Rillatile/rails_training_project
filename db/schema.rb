@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_28_151531) do
+ActiveRecord::Schema.define(version: 2021_09_30_115853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,51 @@ ActiveRecord::Schema.define(version: 2021_09_28_151531) do
     t.bigint "author_id", null: false
     t.integer "price"
     t.index ["author_id"], name: "index_books_on_author_id"
+  end
+
+  create_table "test_model2s", force: :cascade do |t|
+    t.string "field1"
+    t.string "field2"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "test_model3s", force: :cascade do |t|
+    t.string "field1"
+    t.string "field2"
+    t.string "field3"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "test_model4s", force: :cascade do |t|
+    t.string "field1"
+    t.string "field2"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "test_models", force: :cascade do |t|
+    t.string "field"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "validating_model1s", force: :cascade do |t|
+    t.string "title"
+    t.integer "just_number"
+    t.string "first_value"
+    t.string "second_value"
+    t.string "string_number"
+    t.string "uniq_string"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "validating_model2s", force: :cascade do |t|
+    t.string "just_string"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "books", "authors"
